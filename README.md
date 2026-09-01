@@ -8,6 +8,8 @@ Using a range of 2020-80 series rails for rigidity & component support of all su
 Each frame is broken down into it's prime functions: Print, CNC, Form, Fab, DEL(Desktop Electronics Lab)(PCB & Electronics production).
 <br />
 Each category borrowed from the Open Source Hardware community allowing this compilation of projects to help others bring a vision or dream to life! 
+  <img width="600" height="300" alt="ChatGPT Image Jun 26, 2026, 07_50_59 PM" src="https://github.com/user-attachments/assets/f68cb7df-4371-418e-a9bc-e83c84e18d85" />
+
 <br>
   As production of each frame is completed, a full BOM & redesigned files will be saved in it's final location.
 Frames:
