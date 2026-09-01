@@ -1,0 +1,81 @@
+# 🦐 Hera-Flux / Prawn Guard
+### Edge-AI Aquaculture Monitoring & Off-Grid Mesh Network System
+
+![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Hardware](https://img.shields.io/badge/Hardware-Raspberry_Pi_5_%7C_Arduino_Nano-orange)
+<!-- Placeholder for future sponsor badges: ![Sponsored by](https://img.shields.io/badge/Sponsored%20By-YourCompany-blue) -->
+
+> **Mission:** Democratizing sustainable aquaculture through resilient, offline-first, edge-AI water quality monitoring.
+
+---
+
+## 🌊 Overview
+**Hera-Flux (Prawn Guard)** is an open-source, edge-first AI monitoring system designed for freshwater prawn (*Macrobrachium rosenbergii*) aquaculture. Built to operate in rugged, off-grid environments, it provides real-time GPS-based triage alerts for critical water parameters (pH, dissolved oxygen, temperature) without relying on cloud infrastructure.
+
+This project is transitioning from a hobbyist testbed to a semi-commercial deployment across a 60-mile regional network in Missouri, USA, complete with comprehensive educational resources for local farmers.
+
+---
+
+## 🏗️ Technical Architecture
+The system is designed for maximum reliability and low power consumption, leveraging a hybrid edge-computing and mesh-networking stack:
+
+- **Core Compute:** Raspberry Pi 5 (running local AI stack: Ollama + Qdrant for edge-based anomaly detection).
+- **Microcontroller Nodes:** Arduino Nano / ESP32 for low-power sensor polling.
+- **Connectivity:** Meshtastic (LoRa) mesh network for GPS-based triage alerts, with Reticulum Network Stack as an encrypted fallback backbone for absolute off-grid reliability.
+- **Alerting:** Core node + MeshIP for direct cell phone alerts, bypassing traditional cloud dependencies.
+
+---
+
+## 🛠️ Hardware Bill of Materials (BOM)
+*We believe in transparent, reproducible builds. Below are the core components used in our prototype. (Links provided for reference and potential sponsorship alignment).*
+
+| Component | Purpose | Example Part / Supplier |
+| :--- | :--- | :--- |
+| **Single Board Computer** | Core AI processing & gateway | [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/) |
+| **Microcontroller** | Edge sensor node | Arduino Nano / ESP32 |
+| **pH Sensor** | Water quality monitoring | [Atlas Scientific EZO-pH](https://atlas-scientific.com/ph/) or equivalent |
+| **Dissolved Oxygen** | Critical aquaculture metric | Optical DO sensor (e.g., DFRobot) |
+| **Temperature Sensor** | Ambient & water temp | DS18B20 (Waterproof) |
+| **LoRa Module** | Mesh networking | LilyGO T-Echo or RAK Wireless WisBlock |
+| **PCB Fabrication** | Custom sensor node boards | *[Sponsor: e.g., JLCPCB]* |
+| **Enclosures** | Rugged, waterproof housing | *[Sponsor: e.g., MISUMI / Polycarbonate boxes]* |
+
+*(Note: Full schematics and KiCad files are available in the `/hardware` directory).*
+
+---
+
+## 📚 Educational & Community Impact
+Technology is only as good as its accessibility. A core pillar of Prawn Guard is **open knowledge sharing**. We are actively developing:
+- 🎥 **Video Tutorials:** Step-by-step build logs and deployment guides.
+- 📖 **Printable Guides:** Weather-resistant, quick-reference setup sheets for farmers.
+- 💻 **Virtual Workshops:** Online aquaponic/hydroponic troubleshooting and training sessions.
+
+*All educational materials will prominently feature and link back to the hardware suppliers and sponsors who make this work possible.*
+
+---
+
+## 🤝 Sponsorship & Partnership
+Building rugged, reliable agritech hardware requires quality components. We are actively seeking **in-kind sponsorships** (components, PCB fabrication credits, or compute modules) from companies aligned with sustainability, open-source hardware, and STEM education.
+
+### What We Offer Sponsors:
+1. **Prominent Brand Placement:** Logos and direct product links in all video tutorials, printable guides, and the GitHub repository.
+2. **Real-World Case Studies:** Detailed technical reviews of how your products perform in demanding, real-world aquaculture environments.
+3. **Community Goodwill:** Direct support for local food security, sustainable farming, and hands-on technical education.
+
+📩 **Interested in partnering?** Reach out to us at: `[Your Email Address]`  
+🌐 **Learn more:** `[Link to your simple website/landing page, if available]`
+
+---
+
+## 🗺️ Roadmap
+- [x] Initial prototype architecture design (Hera-Flux core)
+- [x] Local AI stack integration (Ollama + Qdrant on Pi 5)
+- [ ] Custom PCB design and fabrication (Target: Q4 2024)
+- [ ] Field testing with initial Meshtastic node deployment
+- [ ] Launch of first educational video tutorial and printable guide
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
